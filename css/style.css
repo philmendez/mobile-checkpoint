@@ -1,0 +1,147 @@
+.skip {
+    position: absolute;
+    left: -500px;
+}
+
+/* Page */
+
+.big-container{
+    padding: 0 10vw 0 10vw;
+}
+
+/* Font */
+
+p, li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Nav bar */
+
+.active {
+background-color: #045aaa;
+}
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a, nav li img {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* main */
+.active-text {
+    text-decoration: #045aaa wavy underline;
+}
+
+/* background image - DS 10 */
+/* body {
+    background-image: url(../images/events_wayne.jpeg);
+   } */
+.background {
+    background-color: #cccccc;
+    background-image: url(../images/texture.jpeg);
+}
+
+/* Gallery */
+main img:nth-child(odd) {
+    background-color: #045aaa;
+  }
+
+main img {
+    width: 200px;
+    border: 3px dotted #045aaa;
+    padding: 20px;
+    margin: 20px;
+}
+
+main img:hover {
+    opacity: 50%;
+    background-color: #045aaa;
+    transform: scale(1.2);
+    border: none;
+}
+/* Grid */
+
+.foodgrid {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 10px;
+}
+/* Flex */
+
+.eventsflex{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+/* amimation */
+
+#animation {
+    animation: animation 5s 1;  }
+
+@keyframes animation {
+    from {width: 0px; opacity: 0;}
+    to {width: 200; opacity: 1; }
+}
+  /* reduced motion */
+  @media (prefers-reduced-motion) {
+    #animation {
+      animation-name: dissolve;
+    }
+  }
+
+  /* draw */
+
+
+.container {
+    height: 100%;
+    display: flex;
+    border: 3px solid #045aaa;
+}
+
+#toolbar {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 25vw;
+    border: 3px dotted #045aaa;
+}
+
+#toolbar * {
+    margin-bottom: 6px;
+}
+
+#toolbar label {
+    font-size: 12px;
+}
+
+#toolbar input {
+    width: 100%;
+}
+
+#toolbar button {
+    background-color: #1565c0;
+    border: none;
+    border-radius: 4px;
+    color:white;
+    padding: 2px;
+}
+
+/* end draw */

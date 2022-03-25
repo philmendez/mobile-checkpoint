@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to the favicon image -->
+	<link rel="icon" href="images/favicon.png">
+	<!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/html5reset.css">
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYCQ128BVF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NYCQ128BVF');
+  </script>
+<!-- Title -->
+<title>Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/1fb328bf7c.js" crossorigin="anonymous"></script>
+</head>
+<body class="big-container background">
+  <header>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <nav>
+    <ul class="topnav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tattoos.html">Tattoos</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li ><a href="events.html">Events</a></li>
+      <li class="active"><a href="contact.html">Contact</a></li>
+      <li style="float:right"><img src="images/logo_white.png" style="width:125px" alt="logo"/></li>
+    </ul>
+    </nav>
+  </header>
+<main>
+  <h1 class="active-text">Contact</h1>
+
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+action="https://formspree.io/f/mnqwzrbl"
+method="POST"
+>
+<label>
+  Your email:
+  <input type="email" name="email">
+</label>
+<label>
+  Your message:
+  <textarea name="message"></textarea>
+</label>
+
+<!-- your other form fields go here -->
+
+<button type="submit">Send</button>
+
+<!-- fun muzak -->
+<audio controls>
+  <source src="littlebums.mp3" type="audio/mpeg">
+</audio>
+<embed src="/littlebums.mp3" loop="true" autostart="true" width="2" height="0">
+
+
+
+<!-- draw -->
+<section class="container">
+    <div id="toolbar">
+        <h1>draw your idea for a tattoo</h1>
+        <label for="stroke">Stroke</label>
+        <input id="stroke" name='stroke' type="color">
+        <label for="lineWidth">Line Width</label>
+        <input id="lineWidth" name='lineWidth' type="number" value="5">
+        <button id="clear">Clear</button>
+    </div>
+    <div class="drawing-board">
+        <canvas id="drawing-board"></canvas>
+    </div>
+</section>
+<script src="./index.js"></script>
+
+<!-- end draw -->
+
+</form>
+
+</main>
+
+<footer>
+  <p>Bunker.inks 2022 ©</p>
+  <a href="https://www.instagram.com/bunker.inks/" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+    </a>
+    <i class="fa-solid fa-splotch"></i>
+</footer>
+  </body>
+</html>
